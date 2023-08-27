@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <title>Focus Timer</title>
+</head>
+<body>
+    <div class="main">
+        <video src="./bg.mp4" muted loop class="bg-video"></video>
+        <div class="timer-container">
+            <div class="timer">
+                <div class="time">
+                    <p class="minutes">60</p>
+                    <p class="colon">:</p>
+                    <p class="seconds">00</p>
+                </div>
+                <div class="btn-container">
+                    <div class="btn start" onclick="startTimer()">
+                        <i class="fa fa-play"></i>
+                    </div>
+                    <div class="btn stop" onclick="stopTimer()">
+                        <i class="fa fa-stop"></i>
+                    </div>
+                    <div class="btn reset" onclick="repeat()">
+                        <i class="fa fa-repeat"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <audio src="./audio.mp3" class="bg-audio"></audio>
+</body>
+<script src="/script.js"></script>
+</html>
